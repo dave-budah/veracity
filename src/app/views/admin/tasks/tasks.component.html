@@ -1,0 +1,26 @@
+<div class="list">
+    <div class="card w-100 task-card" listDraggable>
+      <div class="card-header border-0">
+        <h5>Assigned Tasks</h5>
+      </div>
+      <div class="task-list-item" *ngFor="let task of tasks" listDrag>
+        <h6 class="task-title">{{ task.title }}</h6>
+        <p>{{ task.description }}</p>
+      </div>
+    </div>
+
+    <div class="card w-100 task-card">
+<!--     Pending Tasks Here-->
+      <div class="card-header border-0">
+        <h5>Pending Tasks</h5>
+      </div>
+    </div>
+
+    <div class="card w-100 task-card">
+<!--     Completed Tasks -->
+      <div class="card-header border-0">
+        <h5>Completed Tasks</h5>
+      </div>
+    </div>
+
+</div>

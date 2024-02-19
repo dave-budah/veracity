@@ -1,0 +1,41 @@
+<div class="grid-container">
+  <div class="message-sidebar">
+    <button [routerLink]="'compose'"><i class="bi bi-pen"></i> Compose</button>
+
+    <div class="message-quick-links">
+      <div class="message-quick-link">
+        <a [routerLink]="'messages'">
+          <div>
+            <i class="bi bi-envelope me-2"></i>
+            <span>Inbox</span>
+          </div>
+          <span class="unread-count">332</span>
+        </a>
+      </div>
+      <div class="message-quick-link">
+        <a href="">
+          <div>
+            <i class="bi bi-send me-2"></i>
+            <span>Sent</span>
+          </div>
+          <span class="unread-count">2</span>
+        </a>
+      </div>
+      <div class="message-quick-link">
+        <a href="">
+          <div>
+            <i class="bi bi-trash2 me-2"></i>
+            <span>Trash</span>
+          </div>
+          <span class="unread-count">2</span>
+        </a>
+      </div>
+    </div>
+  </div>
+<!--  Message body starts here -->
+  <div class="message-detail">
+   <router-outlet></router-outlet>
+  </div>
+</div>
+
+

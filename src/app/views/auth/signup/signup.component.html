@@ -1,0 +1,66 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 p-5">
+      <div class="card border-0 auth__card bg-transparent">
+        <div class="card-header bg-transparent border-0">
+          <h3 class="mb-2">Procurement System</h3>
+          <p>Discover a World of Endless Possibilities - Control your business from one place!</p>
+        </div>
+        <div class="card-body bg-transparent">
+          <img src="../../../../assets/images/static/content-structure.gif" alt="login image">
+        </div>
+      </div>
+
+    </div>
+    <div class="col-md-6 p-5">
+      <div class="card bg-transparent border-0 auth__card">
+        <div class="card-header border-0 bg-transparent">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="/"><i class="bi bi-arrow-left"></i></a></li>
+              <li class="breadcrumb-item active" aria-current="page">Home</li>
+            </ol>
+          </nav>
+        </div>
+        <div class="card-body">
+          <form class="auth__form">
+            <div class="form-title text-center">
+              <h3>Signup</h3>
+            </div>
+            <div class="mb-3 input-box">
+              <input type="text" class="form-input" id="name" placeholder="">
+              <label for="name" class="input-label">Name</label>
+            </div>
+            <div class="mb-3 input-box">
+              <input type="text" class="form-input" id="email" placeholder="">
+              <label for="email" class="input-label">Email</label>
+            </div>
+            <div class="mb-3 input-box">
+              <input [type]="showPassword ? 'text':'password'" class="form-input" id="password" placeholder="">
+              <label for="password" class="input-label">Password</label>
+              <i class="bi bi-eye" (click)="toggleShow()" *ngIf="!showPassword"></i>
+              <i class="bi bi-eye-slash" (click)="toggleShow()" *ngIf="showPassword"></i>
+            </div>
+            <div class="mb-3 input-box">
+              <input [type]="showPassword ? 'text':'password'" class="form-input" id="password-confirm" placeholder="">
+              <label for="password" class="input-label">Confirm Password</label>
+            </div>
+            <div class="mb-4 mt-5 text-center">
+              <button type="submit" class="btn default-btn w-50">Signup</button>
+            </div>
+            <div class="mb-5 text-center">
+              <p>Already have an account? Login <a href="/login">here</a></p>
+            </div>
+
+            <div class="card-footer bg-transparent border-0">
+              <div class="text-center">
+                <p class="mb-0">Copyright © {{ currentYear }} <a href="https://selvigtech.com" target="_blank">Selvigtech</a>. All rights reserved.</p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
