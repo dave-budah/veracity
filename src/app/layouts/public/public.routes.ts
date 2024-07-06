@@ -1,7 +1,8 @@
 import {Route} from "@angular/router";
 import {PublicComponent} from "./public.component";
 import {BlogComponent} from "../../views/public/blog/blog.component";
-import {HomeComponent} from "../../views/public/home/home.component";
+import {LandingComponent} from "../../views/public/landing/landing.component";
+
 
 export const routes: Route[] = [
   {
@@ -14,7 +15,7 @@ export const routes: Route[] = [
       },
       {
         path: 'home',
-        component: HomeComponent
+        component: LandingComponent
       },
       {
         path: 'blog',

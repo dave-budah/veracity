@@ -8,7 +8,7 @@ import {Post} from "../models/post";
   providedIn: 'root'
 })
 export class PostService {
-  private postUrl = `${environment.API_URL}/posts`
+  private postUrl = '/api/posts';
 
   constructor(private httpClient: HttpClient) { }
 
